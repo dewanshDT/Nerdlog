@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import BlogEditor from "./components/BlogEditor";
 import Blog from "./components/Blog";
 const auth = app.auth();
-const url = "https://dew-nerdlog.herokuapp.com";
+const url = process.env.NODE_ENV === "production" ? "https://dew-nerdlog.herokuapp.com" : "";
 
 function App() {
   const [user, setUser] = useState();

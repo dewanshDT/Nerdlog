@@ -509,3 +509,21 @@ a {
 .sidebar.blog {
   padding: .5rem;
 }
+
+.markdown-body {
+  overflow-y: auto;
+  padding-right: .5rem;
+}
+
+.markdown-body::-webkit-scrollbar {
+  width: .5rem;
+}
+
+.markdown-body::-webkit-scrollbar-track {
+  background: none;
+}
+
+.markdown-body::-webkit-scrollbar-thumb {
+  background: var(--ascent-color);
+  border-radius: .5em;
+}
