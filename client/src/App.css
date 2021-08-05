@@ -245,6 +245,7 @@ a {
   margin-left: auto;
   height: 100%;
   align-items: center;
+  display: none;
 }
 
 .blog-nav-link {
@@ -526,4 +527,33 @@ a {
 .markdown-body::-webkit-scrollbar-thumb {
   background: var(--ascent-color);
   border-radius: .5em;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .navigation {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-right: .5rem;
+    padding: .3rem .1rem;
+    justify-content: center;
+  }
+  .nav-item {
+    margin: auto 0.5em;
+    font-size: 1.2rem;
+  }
+  .nav-item.bottom {
+    margin: auto;
+    background: none;
+    margin-right: 0;
+  }
 }
